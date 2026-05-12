@@ -414,3 +414,77 @@ body {
   }
 
 }
+/* ── CORREÇÕES E MELHORIAS ── */
+
+/* Code box no lugar da imagem */
+.code-box {
+  background: rgba(17,24,39,0.95);
+  border: 1px solid rgba(0,191,255,0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(0,191,255,0.1), 0 30px 80px rgba(0,0,0,0.5);
+}
+.code-dot-row {
+  background: rgba(0,0,0,0.3);
+  padding: 10px 16px;
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.dot.r { background: #ff5f57; }
+.dot.y { background: #febc2e; }
+.dot.g { background: #28c840; }
+.code-text {
+  padding: 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  line-height: 2;
+  white-space: pre;
+}
+.ct { color: #00d4ff; }
+.ca { color: #7c8cf8; }
+.cs { color: #7ecfad; }
+.cv { color: #e2eaf5; }
+
+/* Benefits icon */
+.benefits-icon-wrap {
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: rgba(0,191,255,0.05);
+  border: 1px solid rgba(0,191,255,0.15);
+  border-radius: 24px;
+}
+
+/* Hero padding top para compensar navbar fixa */
+.hero { padding-top: 80px; }
+
+/* Formulário melhorado */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0,191,255,0.1);
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: var(--secondary-text); }
+
+/* Mensagem de feedback do formulário */
+.form-msg {
+  padding: 14px 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+.form-msg.success {
+  background: rgba(34,197,94,0.1);
+  border: 1px solid rgba(34,197,94,0.3);
+  color: #4ade80;
+}
+.form-msg.error {
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.3);
+  color: #f87171;
+}

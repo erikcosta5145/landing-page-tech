@@ -6,7 +6,7 @@
 
   <title>TechVision</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,10 +79,17 @@
 
       </div>
 
-      <div class="hero-image">
-
-        <img src="assets/hero-image.png" alt="Imagem tecnologia">
-
+      <div class="hero-visual-placeholder" aria-hidden="true">
+        <div class="code-box">
+          <div class="code-dot-row"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+          <pre class="code-text"><span class="ct">&lt;div</span> <span class="ca">class</span>=<span class="cs">"hero"</span><span class="ct">&gt;</span>
+  <span class="ct">&lt;h1&gt;</span><span class="cv">TechVision</span><span class="ct">&lt;/h1&gt;</span>
+  <span class="ct">&lt;p&gt;</span><span class="cv">Inovação Digital</span><span class="ct">&lt;/p&gt;</span>
+  <span class="ct">&lt;button&gt;</span>
+    <span class="cv">Começar →</span>
+  <span class="ct">&lt;/button&gt;</span>
+<span class="ct">&lt;/div&gt;</span></pre>
+        </div>
       </div>
 
     </div>
@@ -151,11 +158,7 @@
 
     <div class="container benefits-grid">
 
-      <div class="benefits-image">
-
-        <img src="assets/hero-image.png" alt="Tecnologia">
-
-      </div>
+      <div class="benefits-image"><div class="benefits-icon-wrap">⚡</div></div>
 
       <div class="benefits-text">
 
@@ -221,17 +224,16 @@
 
       </div>
 
-      <form class="contact-form">
+      <form class="contact-form" id="contactForm" onsubmit="return false;">
 
-        <input type="text" placeholder="Seu nome">
+        <input type="text" id="nome" placeholder="Seu nome" required>
 
-        <input type="email" placeholder="Seu e-mail">
+        <input type="email" id="email" placeholder="Seu e-mail" required>
 
-        <textarea placeholder="Sua mensagem"></textarea>
+        <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
 
-        <button class="btn primary-btn">
-          Enviar
-        </button>
+        <button class="btn primary-btn" onclick="enviarContato()">Enviar Mensagem</button>
+        <div id="formMsg" class="form-msg" style="display:none"></div>
 
       </form>
 
@@ -244,28 +246,19 @@
     <div class="container footer-content">
 
       <h3>TechVision</h3>
-
-      <p>
-        Landing page moderna desenvolvida com HTML5 e CSS3.
-      </p>
-
+      <p>Landing page moderna — Erik Nascimento da Costa · UNINTER 2026</p>
       <div class="social-links">
-
-        <a href="#">Instagram</a>
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-
+        <a href="https://github.com/erikcosta5145" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/eriknascosta" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:eriknascosta01@gmail.com">E-mail</a>
       </div>
-
-      <span>
-        © 2026 - Todos os direitos reservados.
-      </span>
+      <span>© 2026 · Erik Nascimento da Costa · Todos os direitos reservados.</span>
 
     </div>
 
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
